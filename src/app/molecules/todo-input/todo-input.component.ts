@@ -28,7 +28,6 @@ export class TodoInputComponent {
   }
 
   submitTodo() {
-    console.log('input app', this.todoForm.value);
     const todoTitle = this.todoForm.value?.todoTitle;
     if (todoTitle) {
       const todo: Todo = {
@@ -36,8 +35,6 @@ export class TodoInputComponent {
         title: todoTitle,
         completed: false,
       };
-      console.log('todo Titke', todoTitle);
-      console.log('new todo', todo);
       this.todoService.addTodo(todo);
       this.todoForm.get('todoTitle')?.setValue('');
     }
