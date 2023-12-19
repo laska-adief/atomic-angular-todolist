@@ -1,0 +1,7 @@
+<div class="todoinput">
+  <app-todo-input></app-todo-input>
+</div>
+<div class="todolist">
+  <app-checkbox *ngFor="let todo of todos" [item]="todo" (checkBoxChanged)="checkBoxTodoChange($event)"
+    [ngClass]="{'completed': todo?.completed}"></app-checkbox>
+</div>
