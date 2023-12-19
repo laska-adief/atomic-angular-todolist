@@ -6,7 +6,7 @@ import { Todo } from '../../types/Todo';
   providedIn: 'root',
 })
 export class TodoService {
-  private todos: Todo[] = [{ id: '1', title: 'app', completed: false }];
+  private todos: Todo[] = [];
   private todoListSubject = new BehaviorSubject<Todo[]>(this.todos);
   todos$ = this.todoListSubject.asObservable();
 
