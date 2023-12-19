@@ -1,0 +1,5 @@
+<form [formGroup]="todoForm" (submit)="submitTodo()">
+  <app-input placeholder="What to do" appearance="outline" label="Input Todo"
+    [control]="todoForm.get('todoTitle')"></app-input>
+  <app-button color="primary" type="submit" label="Add Todo"></app-button>
+</form>
