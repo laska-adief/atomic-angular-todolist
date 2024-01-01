@@ -1,6 +1,10 @@
-# AtomicAngularTodolist
+# Atomic Angular Todolist
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+
+## About The Project
+
+Angular application with saved staticaly using atomic design concept. atoms, molecules, organisms, templates, and pages structure folder.
 
 ## Development server
 
